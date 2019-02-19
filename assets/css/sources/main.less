@@ -1,0 +1,21 @@
+// сначала переменные, потому что остальные могут их использовать
+@import "variables";
+// потом миксины, потому что в миксинах могут использовать переменные
+// а сами миксины нужны в других файлах
+@import "mixins";
+// затем общие стили (body, html, * {} etc)
+@import "common";
+// стили отдельных блоков по БЭМ
+// для каждого независимого блока - отдельный файл
+@import "blocks/about";
+@import "blocks/contacts";
+@import "blocks/footer";
+@import "blocks/form";
+@import "blocks/header";
+@import "blocks/info-block";
+@import "blocks/btn";
+@import "blocks/logo";
+@import "blocks/page";
+@import "blocks/phone";
+@import "blocks/title-card";
+@import "blocks/welcome";

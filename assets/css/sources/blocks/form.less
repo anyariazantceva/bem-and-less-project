@@ -1,0 +1,41 @@
+.form {
+  width: 25rem;
+  &__fieldset {
+    border: none;
+    min-width: 0;
+  }
+  &__control {
+    margin: 1rem 0;
+  }
+  &__label {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+    font-family: inherit;
+    line-height: 1.1;
+    max-width: 100%;
+    min-width: 100%;
+
+    &:hover {
+      border: 2px solid #e7e4e4;
+    }
+
+    &:focus {
+      border: 2px solid black;
+    }
+  }
+  
+  &__note {
+    color: #84898d;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+  }
+
+}
